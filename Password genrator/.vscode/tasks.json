@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Genrate Password",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "genratePass.cpp",
+                "passwordGenrator.cpp",
+                "passwordGenrator.h",
+                "-o",
+                "genratePass.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile all cpp files"
+        }
+    ]
+}
